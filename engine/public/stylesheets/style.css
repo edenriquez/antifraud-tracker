@@ -1,0 +1,66 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.card-container{
+  padding-top: 80px;
+  padding-left: 50px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 22px 55px rgba(166, 145, 199, 0.19), 0 4px 9px rgba(153, 202, 232, 0.23);
+}
+.card-container  h1{
+  color: #7fa2f7;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}
+
+.card-container  i{
+  font-size: 30px;
+  margin: 10px;
+}
+.card-container-child{
+  margin-top: 20px;
+  height: 100px;
+  padding-left: 50px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 22px 55px rgba(166, 145, 199, 0.19), 0 4px 9px rgba(153, 202, 232, 0.23);
+}
+.text-blue{
+  color: #7fa2f7;
+} 
+.ribbon-danger{
+  border-left: 5px solid #a94442!important;
+}
+.card-container-child p{
+  border-left: 5px solid #8383f3;
+  padding-left: 10px;
+  width: 350px;
+}
+.transaction-container{
+  margin-top: 100px;
+}
+.transaction{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.transaction > .container{
+  line-height: 0.3;
+}
+.alert{
+  width: 45px;
+  background: red;
+  position: absolute;
+  right: 10px;
+  margin-top: -10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.red-processor{
+  color: #a94442;
+}

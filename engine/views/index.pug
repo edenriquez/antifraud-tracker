@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  div(class='container')
+    div(class='row')
+      div(class='col-md-12')
+        div(class='card-container')
+          h1= "Ultimas Transacciones"
+        div(class='col-md-4')
+          div(class='card-container-child col-md-12')
+            h1(class='text-blue')= "Total"
+            p= " $ 35000.00 MXN"
+        div(class='col-md-4')
+          div(class='card-container-child col-md-12')
+            h1(class='text-blue')= "Compras"
+            p= " 7"
+        div(class='col-md-4')
+          div(class='card-container-child col-md-12')
+            h1(class='text-danger')= "Fraudes"
+            p(class='ribbon-danger')= "2"
+      div(class='col-md-12 transaction-container')
+        each tr in [1,2,3,4,5,6,7]
+          div(class='transaction')
+            div(class='container')
+              if tr == 2 || tr == 6
+                div(class='alert')
+                  i(class='glyphicon glyphicon-bell')
+              h5= "Transaccion: Dummy #"+tr
+              strong
+                small
+                  p= "Comercio: "
+                    a(href='/stores/nike')= "Nike"
+                  p= "Amount: 500.00 MXN" 
+                  p= "Articulos: "
+                    li= "Tennis"
+                  p= "Dispositivo: Iphone"  
+                  p= "Tienda: "
+                    a(href='https://www.nike.com/mx/es_la/')= "https://www.nike.com/mx/es_la/"
+                  p= "Procesador: "
+                    a(class='red-processor' href='/payment-processors/adyen')= 'Adyen' 
+                  p= "Banco: Banamex"
+                  p= "Fecha: Martes 15 de Marzo del 2018"
+
+
+

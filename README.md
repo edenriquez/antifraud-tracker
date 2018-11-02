@@ -3,6 +3,11 @@
 The purpose of this project is let human beings handle, record and recognice their 
 payment history to figure out unknown charges and come back the control of their card payments.
 
+
+
+![](https://github.com/eduenriquez/antifraud-tracker/blob/dev/engine/public/images/capture-example.gif)
+
+
 ## This will help merchants and white label payment gateways identify:
 * Merchant implementation vulnerabilities
 * Possible leaks
@@ -15,3 +20,5 @@ payment history to figure out unknown charges and come back the control of their
 * Provide the exact money used on online payments 
 * Alert when there is a non tracked charge
 * Match possible issues with third party processors 
+
+
