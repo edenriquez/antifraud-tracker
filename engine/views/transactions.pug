@@ -1,0 +1,81 @@
+extends layout
+
+block append stylesheets
+    link(rel='stylesheet', href='/stylesheets/transactions.css')
+block append javascript
+block content
+  div(class='container')
+    div(class='row')
+        div(class='col-md-12')
+            h3(class='text-light')= "Detalles"
+            div(class='transaction-card-container-success')
+                div(class='container')
+                    div(class='col-md-1 col-sm-1 col-xs-1')
+                        div(class='circle-brand')
+                            i(class='glyphicon glyphicon-fire')
+                    div(class='col-md-8 col-xs-8 col-sm-8 col-offset-md-1 col-xs-offset-1 col-md-offset-0 col-sm-offset-1')
+                        h1= "Transaccion: "+ id 
+                        h3= "APROVADA"
+        div(class='col-md-12 payment-details') 
+            div(class='transaction-row')
+                div(class='col-sm-12 col-md-12 col-xs-12')
+                    h3(class='text-light')= "Detalles del Comercio"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left') 
+                            a(class='transaction-value',href='/stores/nike')= "Nike"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Tienda Online:"
+                            a(class='transaction-value',href='https://www.nike.com/mx/es_la/')= "https://www.nike.com/mx/es_la/"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                div(class='col-sm-12 col-md-12 col-xs-12')
+                    h3(class='text-light')= "Detalles de la compra"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Monto:"
+                            p(class='transaction-value')= "500.00 MXN"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12 ')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Articulos:"
+                            li(class='transaction-value')= "Tennis"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Dispositivo:"
+                            li(class='transaction-value')= "Iphone"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+
+                div(class='col-sm-12 col-md-12 col-xs-12')
+                    h3(class='text-light')= "Detalles del Pago"    
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Procesador:"
+                            a(class='transaction-value red-processor' href='/payment-processors/adyen')= 'Adyen' 
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH" 
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Banco:"
+                            p(class='transaction-value')= "Banamex"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Fecha:"
+                            p(class='transaction-value')= "Martes 23 de Octube del 2018"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Ubicacion:"
+                            p(class='transaction-value')= "Estado de México"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+            
