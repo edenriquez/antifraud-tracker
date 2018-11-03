@@ -53,6 +53,14 @@ a {
   margin-bottom: 18px;
   box-shadow: 0 0px 15px rgba(166, 145, 199, 0.14), 0 0px 5px rgba(153, 202, 232, 0.17);
 }
+.fraud-transaction{
+  padding: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background: red;
+  margin-bottom: 18px;
+  box-shadow: 0 0px 15px rgba(166, 145, 199, 0.14), 0 0px 5px rgba(153, 202, 232, 0.17);
+}
 
 .alert{
   width: 45px;
@@ -66,7 +74,7 @@ a {
 .red-processor{
   color: #a94442;
 }
-.transaction > .container .col-md-1{
+.transaction, .fraud-transaction > .container .col-md-1{
   margin-top: 15px;
 }
 .circle-brand{
@@ -86,3 +94,8 @@ a {
 .transaction-text p{
   color: #fbfbfba3;
 }
+.arrow-right{
+  color: #fff;
+  margin-top: 10px;
+}
+

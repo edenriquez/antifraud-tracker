@@ -20,5 +20,5 @@ payment history to figure out unknown charges and come back the control of their
 * Provide the exact money used on online payments 
 * Alert when there is a non tracked charge
 * Match possible issues with third party processors 
-
-
+* See common attacks shared throgh all the community
+* See most common places where attacks occur (maps)
