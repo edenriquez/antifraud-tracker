@@ -1,7 +1,40 @@
 extends layout
 
+block append stylesheets
+  link(rel='stylesheet', href='/stylesheets/profiles.css')
+
+block append javascript
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+    script(src="http://d3js.org/d3.v3.min.js")    
+
 block content
     div(class='container')
         div(class='row')
             div(class='col-md-12')
-                h1(class='text-center')= paymentName
+                div(class='background-profile')
+                    h3= "Analitics"
+                div(class='card')
+                    div(class='bank-name', title=paymentName)= paymentName
+                    div(class='lines-down')
+                    div(class='lines-up')
+            div(class='col-md-12 col-sm-12 col-xs-12 bank-info')
+                div(class='col-md-4 col-sm-4 col-xs-4')
+                    div(class='col-md-12')
+                        h3(class='text-center')= 'Reportes de fraude'
+                        strong
+                            p(class='text-center text-danger ')= "1023"
+                    div(class='horizontal-divider')
+                div(class='col-md-4 col-sm-4 col-xs-4')
+                    div(class='col-md-12')
+                        h3(class='text-center')= 'Votos'
+                        strong
+                            p(class='text-center text-danger ')= "20395"
+                    div(class='horizontal-divider')
+                div(class='col-md-4 col-sm-4 col-xs-4')
+                    div(class='col-md-12')
+                        h3(class='text-center')= 'Procesadores ligados'
+                        strong
+                            p(class='text-center text-danger ')= "4"
+    script
+        include ../controllers/chart.js
