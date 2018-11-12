@@ -5,7 +5,8 @@ payment history to figure out unknown charges and come back the control of their
 
 
 
-![](https://github.com/eduenriquez/antifraud-tracker/blob/dev/engine/public/images/capture-example.gif)
+![](https://github.com/eduenriquez/antifraud-tracker/blob/master/engine/public/images/capture-example.gif)
+
 
 
 ## This will help merchants and white label payment gateways identify:
