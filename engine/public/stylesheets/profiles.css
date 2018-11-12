@@ -29,6 +29,7 @@ body{
   height: 50px;
   border-right: 2px solid #c3c7ce75;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 @font-face {
@@ -440,3 +441,31 @@ body{
     /* IE6-9 fallback on horizontal gradient */
   }
   
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text {
+	  font: 12px sans-serif;
+	}
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
+  }
+
+  svg{
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
