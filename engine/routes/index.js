@@ -7,3 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+'use strict';
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/antifraud-tracker');
+const db_conection = mongoose.createConnection(mongoose) 
+module.exports = mongoose;
+console.log(mongoose);
