@@ -1,0 +1,21 @@
+.store-container h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  display: inline; }
+
+.store-container .store-img {
+  vertical-align: super;
+  position: absolute;
+  margin-right: 50px;
+  width: 100px;
+  margin-top: 10px; }
+
+.store-container .store-back {
+  width: 500px;
+  -webkit-clip-path: polygon(100% 13%, 100% 43%, 0 100%, 0 65%);
+  clip-path: polygon(100% 13%, 100% 43%, 0 100%, 0 65%);
+  position: absolute;
+  margin-top: -100px;
+  left: 30%; }
+
+/*# sourceMappingURL=profile-individual.css.map */

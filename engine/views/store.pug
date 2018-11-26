@@ -1,7 +1,17 @@
 extends layout
 
+block append stylesheets
+  link(rel='stylesheet', href='/stylesheets/profile-individual.css')
+  link(rel='stylesheet', href='/stylesheets/style.sass')
+
 block content
     div(class='container')
         div(class='row')
             div(class='col-md-12')
-                h1(class='text-center')= storeName
+                div(class='store-container')
+                    img(class='store-back', src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/wokkcny4zbhvzobfwc7i/air-presto-womens-shoe-89Tqz1nG.jpg", alt="")
+                    h1(class='col-md-offset-5 col-sm-offset-5 ')= storeName
+                    img(class='store-img' 
+                        src="https://greenroomdesign.com/wp-content/uploads/2018/06/Nike-Logo.png", 
+                        alt="")
+                
