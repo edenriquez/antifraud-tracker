@@ -1,0 +1,107 @@
+a(id='show-sidebar', class='btn btn-sm btn-dark', href='#')
+  i(class='fas fa-bars')
+nav(id='sidebar', class='sidebar-wrapper')
+  .sidebar-content
+    .sidebar-brand
+      a(href='#') profile settings
+      #close-sidebar
+        i.fas.fa-times
+    .sidebar-header
+      .user-pic
+        img.img-responsive.img-rounded(src='/images/profile-sample.jpg' alt='User picture')
+      .user-info
+        span.user-name
+          | Eduardo
+          strong Enriquez
+        span.user-role Administrator
+        span.user-status
+          i.fa.fa-circle
+          span Online
+    // sidebar-search
+    .sidebar-menu
+      ul
+        li.header-menu
+          span General
+        li.sidebar-dropdown
+          a(href='#')
+            i.fa.fa-tachometer-alt
+            span Dashboard
+            span.badge.badge-pill.badge-danger New
+          .sidebar-submenu
+            ul
+              li
+                a(href='#')
+                  | Dashboard 1
+                  span.badge.badge-pill.badge-success Pro
+              li
+                a(href='#') Dashboard 2
+              li
+                a(href='#') Dashboard 3
+        li.sidebar-dropdown
+          a(href='#')
+            i.fa.fa-shopping-cart
+            span E-commerce
+            span.badge.badge-pill.badge-primary 3
+          .sidebar-submenu
+            ul
+              li
+                a(href='#')
+                  | Products
+              li
+                a(href='#') Orders
+              li
+                a(href='#') Credit cart
+        li.sidebar-dropdown
+          a(href='#')
+            i.far.fa-gem
+            span Components
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') General
+              li
+                a(href='#') Panels
+              li
+                a(href='#') Tables
+              li
+                a(href='#') Icons
+              li
+                a(href='#') Forms
+        li.sidebar-dropdown
+          a(href='#')
+            i.fa.fa-chart-line
+            span Charts
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') Pie chart
+              li
+                a(href='#') Line chart
+              li
+                a(href='#') Bar chart
+              li
+                a(href='#') Histogram
+        li.sidebar-dropdown
+          a(href='#')
+            i.fa.fa-globe
+            span Maps
+          .sidebar-submenu
+            ul
+              li
+                a(href='#') Google maps
+              li
+                a(href='#') Open street map
+    // sidebar-menu
+  // sidebar-content
+  .sidebar-footer
+    a(href='#')
+      i.fa.fa-bell
+      span.badge.badge-pill.badge-warning.notification 3
+    a(href='#')
+      i.fa.fa-envelope
+      span.badge.badge-pill.badge-success.notification 7
+    a(href='#')
+      i.fa.fa-cog
+      span.badge-sonar
+    a(href='#')
+      i.fa.fa-power-off

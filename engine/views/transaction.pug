@@ -20,6 +20,32 @@ block content
         div(class='col-md-12 payment-details') 
             div(class='transaction-row')
                 div(class='col-sm-12 col-md-12 col-xs-12')
+                   div(class='col-sm-12 col-md-12 col-xs-12')
+                    h3(class='text-light')= "Detalles del Pago"    
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Procesador:"
+                            a(class='transaction-value red-processor' href='/payment-gateways/adyen')= 'Adyen' 
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH" 
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Banco:"
+                            a(class='transaction-value red-processor' href='/banks/banamex')= 'Banamex' 
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Fecha:"
+                            p(class='transaction-value')= "Martes 23 de Octube del 2018"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
+                    div(class='col-sm-12 col-md-12 col-xs-12')
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
+                            p(class='transaction-label')= "Ubicacion:"
+                            p(class='transaction-value')= "Estado de México"
+                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
+                            h1= "GRAPH"
                     h3(class='text-light')= "Detalles del Comercio"
                     div(class='col-sm-12 col-md-12 col-xs-12')
                         div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left') 
@@ -53,30 +79,5 @@ block content
                         div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
                             h1= "GRAPH"
 
-                div(class='col-sm-12 col-md-12 col-xs-12')
-                    h3(class='text-light')= "Detalles del Pago"    
-                    div(class='col-sm-12 col-md-12 col-xs-12')
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
-                            p(class='transaction-label')= "Procesador:"
-                            a(class='transaction-value red-processor' href='/payment-gateways/adyen')= 'Adyen' 
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
-                            h1= "GRAPH" 
-                    div(class='col-sm-12 col-md-12 col-xs-12')
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
-                            p(class='transaction-label')= "Banco:"
-                            a(class='transaction-value red-processor' href='/banks/banamex')= 'Banamex' 
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
-                            h1= "GRAPH"
-                    div(class='col-sm-12 col-md-12 col-xs-12')
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
-                            p(class='transaction-label')= "Fecha:"
-                            p(class='transaction-value')= "Martes 23 de Octube del 2018"
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
-                            h1= "GRAPH"
-                    div(class='col-sm-12 col-md-12 col-xs-12')
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-left text-left')
-                            p(class='transaction-label')= "Ubicacion:"
-                            p(class='transaction-value')= "Estado de México"
-                        div(class='col-md-6 col-xs-6 col-sm-6 pull-right text-right')
-                            h1= "GRAPH"
+             
             
