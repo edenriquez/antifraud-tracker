@@ -12,6 +12,10 @@ var paymentGatewayRouter = require('./routes/payment-gateways');
 var bankRouter = require('./routes/bank');
 var userRouter = require('./routes/user');
 
+// Mandar a llamr el archivo de conexión moongoose.js
+var moongoose = require('../engine/config/mongoose');
+var db = moongoose(); //Almacenamos una instancia a la clase mongoose
+
 
 var app = express();
 
